@@ -1,0 +1,74 @@
+:root {
+    --cor-fundo: #0b0f19;
+    --cor-container: #161f33;
+    --cor-borda: #00f2ff;
+    --cor-texto: #ffffff;
+    --cor-botao: #1f2d4a;
+    --cor-hover: #00f2ff;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px var(--cor-borda);
+}
+
+.caixa-principal {
+    background-color: var(--cor-container);
+    border: 2px solid var(--cor-borda);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 242, 255, 0.2);
+}
+
+.caixa-perguntas {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    line-height: 1.6;
+}
+
+.caixa-alternativas button {
+    background-color: var(--cor-botao);
+    color: var(--cor-texto);
+    border: 1px solid var(--cor-borda);
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.caixa-alternativas button:hover {
+    background-color: var(--cor-hover);
+    color: var(--cor-fundo);
+    font-weight: bold;
+    box-shadow: 0 0 15px var(--cor-hover);
+}
+
+.escondido {
+    display: none;
+}
+
+.texto-resultado {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
