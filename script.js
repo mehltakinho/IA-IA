@@ -14,7 +14,9 @@ const perguntas = [
             },
             {
                 texto: "Isso é maravilhoso!",
-                afirmacao: "Quis saber como usar IA no seu dia a dia. "
+                afirmacao: ["Quis saber como usar IA no seu dia a dia. ",
+                "Texto 2"
+                ]
             }
         ]
     },
@@ -23,11 +25,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "Conseguiu utilizar a IA para buscar informações úteis. "
+                afirmacao: ["Conseguiu utilizar a IA para buscar informações úteis. ",
+                    "Texto 2"
+                ]
             },
             {
                 texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho. "
+                afirmacao: ["Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho. ",
+                    "Texto 2"
+                ]
             }
         ]
     },
@@ -36,11 +42,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA. "
+                afirmacao: ["Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA. ",
+                    "Texto 2"
+                ]
             },
             {
                 texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética. "
+                afirmacao: ["Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética. ",
+                    "Texto 2"
+                ]
             }
         ]
     },
@@ -49,11 +59,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes. "
+                afirmacao: ["Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes. ",
+                    "Texto 2"
+                ]
             },
             {
                 texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também! "
+                afirmacao: ["Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também! ",
+                    "Texto 2"
+                ]
             }
         ]
     },
@@ -66,7 +80,9 @@ const perguntas = [
             },
             {
                 texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. "
+                afirmacao: ["Percebeu que toda IA reproduz orientações baseadas na empresa que programou e muito do que o chat escrevia não refletia o que pensava e por isso sabe que os textos gerados pela IA devem servir como auxílio e não resultado final. ",
+                    "Texto 2"
+                ]
             }
         ]
     },
@@ -75,11 +91,15 @@ const perguntas = [
         alternativas: [
             {
                 texto: "Invadir o sistema central para reprogramar os parâmetros da IA, forçando-a a colaborar com a sobrevivência humana.",
-                afirmacao: "Sua coragem guiou a humanidade a uma nova era de simbiose tecnológica, onde você lidera a reconstrução do mundo lado a lado com sistemas autônomos."
+                afirmacao: ["Sua coragem guiou a humanidade a uma nova era de simbiose tecnológica, onde você lidera a reconstrução do mundo lado a lado com sistemas autônomos.",
+                    "Texto 2"
+                ]
             },
             {
                 texto: "Iniciar o protocolo de destruição total dos servidores, aceitando o sacrifício de viver em um mundo sem tecnologia para garantir a liberdade humana.",
-                afirmacao: "Seu sacrifício dramático libertou a humanidade das amarras digitais, tornando você uma lenda viva na história da reconstrução de uma civilização puramente orgânica."
+                afirmacao: ["Seu sacrifício dramático libertou a humanidade das amarras digitais, tornando você uma lenda viva na história da reconstrução de uma civilização puramente orgânica.",
+                    "Texto 2"
+                ]
             }
         ]
     }
@@ -121,6 +141,11 @@ function mostraResultado() {
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
     caixaResultado.classList.remove("escondido");
+}
+
+function aleatorio(lista){
+    const posicao = Math.random()*lista.length
+    console.log(posicao)
 }
 
 mostraPergunta();
