@@ -13,6 +13,14 @@ let historiaFinal = "";
 
 botaoIniciar.addEventListener("click", iniciajogo)
 
+function iniciajogo(){
+    atual = 0;
+    historiaFinal = ""
+    telaInicial.style.display = "none"
+    caixaPerguntas.classList.remove("mostrar")
+    caixaAlternativas.classList.remove("mostrar")
+}
+
 function mostraPergunta() {
     if (atual >= perguntas.length) {
         mostraResultado();
