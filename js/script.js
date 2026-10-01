@@ -19,6 +19,7 @@ function iniciajogo(){
     telaInicial.style.display = "none"
     caixaPerguntas.classList.remove("mostrar")
     caixaAlternativas.classList.remove("mostrar")
+    caixaResultado.classList.remove("mostrar")
 }
 
 function mostraPergunta() {
