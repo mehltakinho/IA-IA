@@ -11,6 +11,8 @@ let atual = 0;
 let perguntaAtual;
 let historiaFinal = "";
 
+botaoIniciar.addEventListener("click", iniciajogo)
+
 function mostraPergunta() {
     if (atual >= perguntas.length) {
         mostraResultado();
