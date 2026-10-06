@@ -20,6 +20,7 @@ function iniciajogo(){
     caixaPerguntas.classList.remove("mostrar")
     caixaAlternativas.classList.remove("mostrar")
     caixaResultado.classList.remove("mostrar")
+    mostraPergunta()
 }
 
 function mostraPergunta() {
