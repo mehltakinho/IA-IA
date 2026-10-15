@@ -6,7 +6,7 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 const botaoIniciar = document.querySelector(".iniciar-btn")
-const telaIniciar = document.querySelector(".tela -inicial")
+const telaIniciar = document.querySelector(".tela-inicial")
 
 let atual = 0;
 let perguntaAtual;
